@@ -1,0 +1,386 @@
+/*
+https://github.com/Hanul/sky-css-base
+v0.0.1 | 20210109
+Author: Sim Young Jae
+License: MIT
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*,
+*:focus {
+  outline: 0;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+a,
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+}
+button,
+input {
+  border: none;
+}
+[hidden] {
+  display: none !important;
+}
+[contenteditable] {
+  -webkit-tap-highlight-color: transparent;
+}
+.float-wrapper:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@font-face {
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+  @import url("https://p.typekit.net/p.css?s=1&k=zoc8uhz&ht=tk&f=15665.15666&a=43843172&app=typekit&e=css");
+}
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(#111112, #2a292a) fixed;
+  color: white;
+  margin: auto;
+}
+.popup-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 20px 0;
+}
+.dialogue.alert {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.dialogue.alert > h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 16px;
+}
+.dialogue.alert > p {
+  padding-left: 16px;
+  padding-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.2em;
+}
+.dialogue.alert > .button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.dialogue.alert > .button-container > button {
+  background-color: transparent;
+  color: white;
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+.dialogue.alert > .button-container > button:hover {
+  background-color: rgba(247, 222, 165, 0.5);
+}
+.dialogue.alert > .button-container > button:active {
+  background-color: "#b19c76";
+}
+.dialogue.confirm {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.dialogue.confirm > h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 16px;
+}
+.dialogue.confirm > p {
+  padding-left: 16px;
+  padding-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.2em;
+}
+.dialogue.confirm > .button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.dialogue.confirm > .button-container > button {
+  background-color: transparent;
+  color: black;
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+.dialogue.confirm > .button-container > button:hover {
+  background-color: rgba(247, 222, 165, 0.8);
+}
+.dialogue.confirm > .button-container > button:active {
+  background-color: "#b19c76";
+}
+.dialogue.prompt {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.dialogue.prompt > h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 16px;
+}
+.dialogue.prompt > p {
+  padding-left: 16px;
+  padding-top: 8px;
+  font-size: 0.875rem;
+  line-height: 1.2em;
+}
+.dialogue.prompt > .input-container {
+  margin-top: 16px;
+  padding: 0 16px;
+}
+.dialogue.prompt > .input-container > input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px;
+  height: 36px;
+  border: 1px solid #e4e8eb;
+}
+.dialogue.prompt > .input-container > input:hover {
+  border: 1px solid "#b19c76";
+}
+.dialogue.prompt > .input-container > input:focus {
+  border: 1px solid "#b19c76";
+}
+.dialogue.prompt > .button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+.dialogue.prompt > .button-container > button {
+  background-color: transparent;
+  color: black;
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+}
+.dialogue.prompt > .button-container > button:hover {
+  background-color: rgba(247, 222, 165, 0.8);
+}
+.dialogue.prompt > .button-container > button:active {
+  background-color: "#b19c76";
+}
+.home-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1240px;
+  margin: auto;
+  background-image: url("/images/gaia.png");
+  background-position-x: 50%;
+  background-position-y: 10%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+}
+@media only screen and (max-width: 719px) {
+  .home-view {
+    padding: 8px;
+  }
+}
+.home-view > h1 {
+  font-family: trajan-pro-3, serif;
+  font-weight: 700;
+  font-size: 4rem;
+  padding-top: 4rem;
+}
+.home-view > .earth {
+  width: 512px;
+  animation: rotate_image 60s linear infinite;
+  transform-origin: 50% 50%;
+  margin: 3rem;
+}
+@media only screen and (max-width: 719px) {
+  .home-view > .earth {
+    width: 100%;
+  }
+}
+@keyframes rotate_image {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.home-view > button {
+  width: 50%;
+  cursor: pointer;
+  padding: 8px 12px 8px 12px;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(177, 156, 118, 0.8);
+  border-radius: 4px;
+}
+@media only screen and (max-width: 719px) {
+  .home-view > button {
+    width: 100%;
+  }
+}
+.home-view > button:hover {
+  background-color: rgba(177, 156, 118, 0.9);
+}
+.home-view > button:active {
+  background-color: #b19c76;
+}
+
