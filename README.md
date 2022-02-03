@@ -1,4 +1,4 @@
-# Gaia Protocol Landing
+# Gaia Protocol Mint
 
 A decentralized mining type NFT with Kronos DAO.
 
