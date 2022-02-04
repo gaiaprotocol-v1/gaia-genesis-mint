@@ -9,7 +9,7 @@
     background-position-x: 50%;
     background-position-y: 10%;
     background-repeat    : no-repeat;
-    height               : 100vh;
+    min-height           : 100vh;
     text-align           : center;
 
     @media @phone {
@@ -25,14 +25,13 @@
     }
 
     >.earth {
-        height          : 40%;
+        max-width       : 30%;
         animation       : rotate_image 60s linear infinite;
         transform-origin: 50% 50%;
         margin          : 3rem;
 
         @media @phone {
-            width : 100%;
-            height: 100%;
+            max-width: 70%;
         }
     }
 
@@ -45,8 +44,8 @@
     >button {
         width           : 50%;
         cursor          : pointer;
-        padding         : 8px 12px 8px 12px;
-        font-size       : 0.875rem;
+        padding         : 20px 12px 20px 12px;
+        font-size       : 1rem;
         text-decoration : none;
         color           : white;
         text-shadow     : 1.5px 1.5px black;

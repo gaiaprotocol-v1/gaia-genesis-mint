@@ -12,7 +12,7 @@ export default class Landing implements View {
       (this.container = el(".home-view",
         el("h1", "Gaia Protocol"),
         el("img.earth", { src: "images/earth.png", alt: "earth" }),
-        el("button", "Mint Your God")
+        el("button", "Mint Your God"),
       ))
     );
   }
