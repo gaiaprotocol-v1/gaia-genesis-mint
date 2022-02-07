@@ -196,7 +196,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
   \*********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst skyrouter_1 = __webpack_require__(/*! skyrouter */ \"./node_modules/skyrouter/lib/index.js\");\nconst Home_1 = __importDefault(__webpack_require__(/*! ./view/Home */ \"./src/view/Home.ts\"));\n(async () => {\n    skyrouter_1.SkyRouter.route(\"\", Home_1.default);\n    if (sessionStorage.__spa_path) {\n        skyrouter_1.SkyRouter.go(sessionStorage.__spa_path);\n        sessionStorage.removeItem(\"__spa_path\");\n    }\n})();\n\n\n//# sourceURL=webpack:///./src/main.ts?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nconst skyrouter_1 = __webpack_require__(/*! skyrouter */ \"./node_modules/skyrouter/lib/index.js\");\r\nconst Home_1 = __importDefault(__webpack_require__(/*! ./view/Home */ \"./src/view/Home.ts\"));\r\n(async () => {\r\n    skyrouter_1.SkyRouter.route(\"\", Home_1.default);\r\n    if (sessionStorage.__spa_path) {\r\n        skyrouter_1.SkyRouter.go(sessionStorage.__spa_path);\r\n        sessionStorage.removeItem(\"__spa_path\");\r\n    }\r\n})();\r\n\n\n//# sourceURL=webpack:///./src/main.ts?");
 
 /***/ }),
 
@@ -206,7 +206,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
   \**************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst skynode_1 = __webpack_require__(/*! @hanul/skynode */ \"./node_modules/@hanul/skynode/lib/index.js\");\nclass Landing {\n    constructor() {\n        document.title = \"Gaia Protocol\";\n        skynode_1.BodyNode.append((this.container = (0, skynode_1.el)(\".home-view\", (0, skynode_1.el)(\"h1\", \"Gaia Protocol\"), (0, skynode_1.el)(\"img.earth\", { src: \"images/earth.png\", alt: \"earth\" }), (0, skynode_1.el)(\"button\", \"Mint Your God\"))));\n    }\n    changeParams(params, uri) { }\n    close() {\n        this.container.delete();\n    }\n}\nexports[\"default\"] = Landing;\n\n\n//# sourceURL=webpack:///./src/view/Home.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nconst skynode_1 = __webpack_require__(/*! @hanul/skynode */ \"./node_modules/@hanul/skynode/lib/index.js\");\r\nclass Landing {\r\n    constructor() {\r\n        document.title = \"Gaia Protocol\";\r\n        skynode_1.BodyNode.append(this.container = (0, skynode_1.el)(\".home-view\", (0, skynode_1.el)(\"h1\", \"Gaia Protocol\"), (0, skynode_1.el)(\"img.earth\", { src: \"images/earth.png\", alt: \"earth\" }), (0, skynode_1.el)(\"button\", \"Mint Your God\")));\r\n    }\r\n    changeParams(params, uri) { }\r\n    close() {\r\n        this.container.delete();\r\n    }\r\n}\r\nexports[\"default\"] = Landing;\r\n\n\n//# sourceURL=webpack:///./src/view/Home.ts?");
 
 /***/ })
 

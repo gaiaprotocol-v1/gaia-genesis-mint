@@ -3,23 +3,22 @@ import { View, ViewParams } from "skyrouter";
 
 export default class Landing implements View {
 
-  private container: DomNode;
+    private container: DomNode;
+    private interval: any;
 
-  constructor() {
-    document.title = "Gaia Protocol";
+    constructor() {
+        document.title = "Gaia Protocol";
 
-    BodyNode.append(
-      (this.container = el(".home-view",
-        el("h1", "Gaia Protocol"),
-        el("img.earth", { src: "images/earth.png", alt: "earth" }),
-        el("button", "Mint Your God"),
-      ))
-    );
-  }
+        BodyNode.append(this.container = el(".home-view",
+            el("h1", "Gaia Protocol"),
+            el("img.earth", { src: "images/earth.png", alt: "earth" }),
+            el("button", "Mint Your God"),
+        ));
+    }
 
-  public changeParams(params: ViewParams, uri: string): void { }
+    public changeParams(params: ViewParams, uri: string): void { }
 
-  public close(): void {
-    this.container.delete();
-  }
+    public close(): void {
+        this.container.delete();
+    }
 }
