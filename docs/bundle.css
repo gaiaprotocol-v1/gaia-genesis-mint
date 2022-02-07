@@ -352,6 +352,7 @@ body {
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 4px;
+  text-decoration: none;
 }
 .connect-wallet-popup > .button-container > a:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -385,15 +386,15 @@ body {
   padding: 16px;
 }
 .klip-qr-popup > .qr {
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
   padding: 16px 0;
   text-align: center;
 }
 .klip-qr-popup > p {
   margin-top: 16px;
   padding: 0 16px;
-  color: #999;
+  color: white;
 }
 .klip-qr-popup > .button-container {
   display: flex;
@@ -402,13 +403,13 @@ body {
 }
 .klip-qr-popup > .button-container > button {
   background-color: transparent;
-  color: #f7dea5;
+  color: white;
   padding: 8px 16px;
   font-size: 14px;
   border-radius: 4px;
 }
 .klip-qr-popup > .button-container > button:hover {
-  background-color: rgba(199, 254, 162, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .home-view {
