@@ -98,7 +98,7 @@ export default class Landing implements View {
                 }),
                 el(".sns",
                     el("a", msg("HOMEPAGE_BUTTON"), { href: "https://gaiaprotocol.com", target: "_blank" }),
-                    el("a", msg("OPENSEA_BUTTON"), { href: "https://opensea.io", target: "_blank" }),
+                    el("a", msg("OPENSEA_BUTTON"), { href: "https://opensea.io/collection/gaia-kronos", target: "_blank" }),
                 ),
             ))
         );
