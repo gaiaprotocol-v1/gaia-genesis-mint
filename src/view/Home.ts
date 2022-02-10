@@ -12,7 +12,7 @@ import Wallet from "../klaytn/Wallet";
 
 export default class Landing implements View {
 
-    private TODAY_COUNT = 9999;
+    private TODAY_COUNT = 2176;
 
     private STATUS = {
         Waiting: msg("MINT_STATUS_TITLE1"),
@@ -59,11 +59,6 @@ export default class Landing implements View {
                 ),
                 el(".progress",
                     this.bar = el(".progress__bar"),
-                    el(".bar-step",
-                        el(".label", msg("WHITELIST_TITLE")),
-                        el(".percent", "4,000"),
-                        el(".line"),
-                    ),
                 ),
                 el(".info",
                     el(".caption", msg("ADDRESS_TITLE")),
