@@ -454,6 +454,13 @@ body {
   text-shadow: 0.5px 0.5px black;
   padding-top: 8px;
 }
+.home-view > .language-select {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+}
 .home-view > .earth {
   max-width: 30%;
   animation: rotate_image 60s linear infinite;

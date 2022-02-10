@@ -1,0 +1,27 @@
+key,ko,en
+TITLE,가이아 프로토콜,Gaia Protocol
+MINT_PRICE_TITLE,"민팅가: 1,000 KLAY","Mint Price: 1,000 KLAY"
+ADDRESS_TITLE,주소,address
+KLAY_AMOUNT_TITLE,클레이 수량,klay amount
+WHITELIST_TITLE,화이트리스트,whitelist
+WHITELIST_DESC,"* 화이트 리스트는 트랜잭션당 5개, 퍼블릭의 경우 10개까지 가능합니다. *",* Up to 5 whitelists per transaction and up to 10 for public. *
+MINT LIMIT,민트 제한 수량 (기본 1개),Mint Limit. (Basic 1)
+MINT_BUTTON,당신의 신을 가져보세요.,Minting Your Gods.
+HOMEPAGE_BUTTON,홈페이지,GO TO HOMEPAGE
+OPENSEA_BUTTON,오픈씨,GO TO OPENSEA
+KLIP_POPUP_TITLE,QR 코드로 Klip 접속,Connect to the klip with qr code.
+KLIP_POPUP_DESC1,QR 코드 리더기 또는 카카오톡 앱을 통해 QR 코드를 스캔해주세요.,Please scan the QR code through the QR code reader or Kakao Talk app.
+KLIP_POPUP_DESC2,카카오톡 실행 ▶ 상단 검색창 클릭 ▶ 코드 스캔 후 로그인,Run Kakao Talk ▶ Click on the search window at the top ▶ Scan the code and log in.
+KLIP_POPUP_DESC3,* Klip > 코드스캔 (사이드메뉴)에서도 스캔이 가능합니다.,* You can also scan the Clip> code scan (side menu).
+CONNECT_WALLET_TITLE,지갑연결하기,Connect wallet
+CONNECT_WALLET_DESC,가이아 프로토콜은 클레이튼 블록체인과의 연결이 필요합니다. 카이카스 혹은 카카오톡 클립에서 연결해주시기 바랍니다.,Gaia Protocol needs a connection with the Clayton blockchain. Please connect from Caicasu or Kakao Talk clip.
+CONNECT_WALLET_BUTTON1,카이카스 설치,Install Kaikas
+CONNECT_WALLET_BUTTON2,카카오톡 클립으로 연결,Connecting to Kakao Talk clips.
+CONNECT_WALLET_BUTTON3,연결하지 않고 둘러보기,Don't connect and look around.
+MINT_STATUS_TITLE1,민팅 대기중,Minting is waiting.
+MINT_STATUS_TITLE2,화이트리스팅 민팅 중,Minting is whitelist.
+MINT_STATUS_TITLE3,퍼블릭 민팅 중,Minting is public.
+MINT_STATUS_TITLE4,민팅 종료,Minting is end.
+CONFIRM_BUTTON,확인,Confirm
+CANCEL_BUTTON,취소,Cancel
+DAYS_TITLE,일,Days
