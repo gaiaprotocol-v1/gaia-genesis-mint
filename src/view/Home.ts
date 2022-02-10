@@ -14,10 +14,10 @@ export default class Landing implements View {
     private TODAY_COUNT = 9999;
 
     private STATUS = {
-        Waiting: "민팅 대기중",
-        WhitelistMinting: "화이트리스팅 민팅 중",
-        PublicMinting: "퍼블릭 민팅 중",
-        Ending: "민팅 종료",
+        Waiting: msg("MINT_STATUS_TITLE1"),
+        WhitelistMinting: msg("MINT_STATUS_TITLE2"),
+        PublicMinting: msg("MINT_STATUS_TITLE3"),
+        Ending: msg("MINT_STATUS_TITLE4"),
     };
 
     private status = "";
