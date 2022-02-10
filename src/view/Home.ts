@@ -1,13 +1,14 @@
 import { BodyNode, DomNode, el } from "@hanul/skynode";
 import { utils } from "ethers";
-import { View, ViewParams } from "skyrouter";
 import msg from "msg.js";
+import { View, ViewParams } from "skyrouter";
+import BrowserInfo from "../BrowserInfo";
 import CommonUtil from "../CommonUtil";
+import Alert from "../component/dialogue/Alert";
 import GaiaNFTContract from "../contracts/GaiaNFTContract";
 import GaiaOperationContract from "../contracts/GaiaOperationContract";
 import Klaytn from "../klaytn/Klaytn";
 import Wallet from "../klaytn/Wallet";
-import BrowserInfo from "../BrowserInfo";
 
 export default class Landing implements View {
 
@@ -82,6 +83,8 @@ export default class Landing implements View {
                             await GaiaOperationContract.mintGaiaNFTWithWhitelist(count);
                         } else if (this.status === this.STATUS.PublicMinting) {
                             await GaiaOperationContract.mintGaiaNFT(count);
+                        } else {
+                            new Alert("오류", "현재 민팅중이 아닙니다.");
                         }
                     },
                 }),
