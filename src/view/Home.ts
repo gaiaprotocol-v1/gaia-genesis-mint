@@ -80,9 +80,17 @@ export default class Landing implements View {
                         let count = parseInt(this.countInput.domElement.value, 10);
                         if (isNaN(count)) { count = 1; }
                         if (this.status === this.STATUS.WhitelistMinting) {
-                            await GaiaOperationContract.mintGaiaNFTWithWhitelist(count);
+                            if (count > 5) {
+                                new Alert("오류", "한번에 최대 5개까지 민팅 가능합니다.");
+                            } else {
+                                await GaiaOperationContract.mintGaiaNFTWithWhitelist(count);
+                            }
                         } else if (this.status === this.STATUS.PublicMinting) {
-                            await GaiaOperationContract.mintGaiaNFT(count);
+                            if (count > 10) {
+                                new Alert("오류", "한번에 최대 10개까지 민팅이 가능합니다.");
+                            } else {
+                                await GaiaOperationContract.mintGaiaNFT(count);
+                            }
                         } else {
                             new Alert("오류", "현재 민팅중이 아닙니다.");
                         }
