@@ -440,7 +440,6 @@ body {
   padding-top: 4rem;
 }
 .home-view > .caption {
-  font-family: trajan-pro-3, serif;
   font-weight: 300;
   font-size: 0.75rem;
   color: #CCCCCC;
@@ -448,8 +447,7 @@ body {
   padding-top: 16px;
 }
 .home-view > .price {
-  font-family: trajan-pro-3, serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
   text-shadow: 0.5px 0.5px black;
   padding-top: 8px;
@@ -460,6 +458,9 @@ body {
   border: none;
   margin-top: 8px;
   cursor: pointer;
+}
+.home-view > .language-select > option {
+  background-color: black;
 }
 .home-view > .earth {
   max-width: 30%;
@@ -484,8 +485,7 @@ body {
   justify-content: space-between;
 }
 .home-view > .mint-info > .progress-text {
-  font-family: trajan-pro-3, serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.75rem;
   text-shadow: 0.5px 0.5px black;
   padding-top: 16px;
@@ -512,7 +512,6 @@ body {
   position: absolute;
   margin-top: -40px;
   z-index: 1;
-  font-family: trajan-pro-3, serif;
   font-size: 0.5rem;
   color: #CCCCCC;
   text-shadow: 0.5px 0.5px black;
@@ -550,23 +549,20 @@ body {
   }
 }
 .home-view > .info > p {
-  font-family: trajan-pro-3, serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
   text-shadow: 1px 1px black;
 }
 .home-view > .info > .caption {
-  font-family: trajan-pro-3, serif;
-  font-weight: 700;
-  font-size: 0.75rem;
+  font-weight: 300;
+  font-size: 0.825rem;
   color: #CCCCCC;
   text-shadow: 0.5px 0.5px black;
   padding-top: 16px;
   padding-bottom: 8px;
 }
 .home-view > .info > .warning {
-  font-family: trajan-pro-3, serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.75rem;
   color: #CCCCCC;
   text-shadow: 0.5px 0.5px black;
@@ -581,7 +577,6 @@ body {
   width: 100%;
   border: 1px solid #CCCCCC;
   border-radius: 8px;
-  font-family: trajan-pro-3, serif;
   color: white;
   background-color: transparent;
 }
@@ -622,9 +617,7 @@ body {
   margin-top: 2rem;
 }
 .home-view > .sns > a {
-  font-family: trajan-pro-3, serif;
-  font-weight: 700;
-  font-size: 0.75rem;
+  font-weight: 500;
   text-shadow: 1px 1px black;
   color: white;
   text-decoration: none;

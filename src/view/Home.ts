@@ -81,18 +81,18 @@ export default class Landing implements View {
                         if (isNaN(count)) { count = 1; }
                         if (this.status === this.STATUS.WhitelistMinting) {
                             if (count > 5) {
-                                new Alert("오류", "한번에 최대 5개까지 민팅 가능합니다.");
+                                new Alert(msg("ERROR_POPUP_TITLE"), msg("ERROR_ALERT_DESC4"));
                             } else {
                                 await GaiaOperationContract.mintGaiaNFTWithWhitelist(count);
                             }
                         } else if (this.status === this.STATUS.PublicMinting) {
                             if (count > 10) {
-                                new Alert("오류", "한번에 최대 10개까지 민팅이 가능합니다.");
+                                new Alert(msg("ERROR_POPUP_TITLE"), msg("ERROR_ALERT_DESC5"));
                             } else {
                                 await GaiaOperationContract.mintGaiaNFT(count);
                             }
                         } else {
-                            new Alert("오류", "현재 민팅중이 아닙니다.");
+                            new Alert(msg("ERROR_POPUP_TITLE"), msg("MINT_ERROR_POPUP_DESC"));
                         }
                     },
                 }),
