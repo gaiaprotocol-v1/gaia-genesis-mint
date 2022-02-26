@@ -36,7 +36,7 @@ export default class Landing implements View {
     private countInput: DomNode<HTMLInputElement>;
 
     constructor() {
-        document.title = "Gaia Protocol";
+        document.title = "Gaia Kronos";
         let select: DomNode<HTMLSelectElement>;
 
         BodyNode.append(
